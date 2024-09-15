@@ -1,0 +1,8 @@
+public_key, private_key = generate_rsa_keys
+
+message = "Hello, RSA!"
+encrypted_message = encrypt(message, public_key)
+puts "Encrypted message: #{encrypted_message.inspect}"
+
+decrypted_message = decrypt(encrypted_message, private_key)
+puts "Decrypted message: #{decrypted_message}"
